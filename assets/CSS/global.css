@@ -3,8 +3,15 @@ font-family: 'Roboto', sans-serif;
 box-sizing: border-box;
 }
 
+body {
+    background-color: #F6F8FC;
+}
+
 .content {
+ width:100vh;
+ height: 100vh;
  padding: 1rem;
+ background-color: #fff;
 }
 
 .content h1 {
@@ -66,4 +73,20 @@ box-sizing: border-box;
 .pokemon .detail img {
     max-width: 100%;
     height: 70px;
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
