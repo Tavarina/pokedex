@@ -1,2 +1,2 @@
 # pokedex
-Projeto pókedex - Dio
+Projeto pokedex - Dio
